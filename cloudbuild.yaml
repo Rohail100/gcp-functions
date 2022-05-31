@@ -5,3 +5,5 @@ steps:
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['functions', 'deploy', 'create', '--trigger-http', '--runtime', 'nodejs16', '--allow-unauthenticated']
   dir: './'
+options:
+  logging: CLOUD_LOGGING_ONLY
