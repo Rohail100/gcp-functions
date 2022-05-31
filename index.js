@@ -5,5 +5,5 @@ functions.http('create', async (req, res) => {
     const customer = await stripe.customers.create({
         description: 'My First Test Customer (created for API docs at https://www.stripe.com/docs/api)',
     });
-    res.json(customer)
+    res.json({...customer,pushupdate:"pushupdate"})
 });
