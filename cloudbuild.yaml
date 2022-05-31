@@ -6,4 +6,4 @@ steps:
   args: ['functions', 'deploy', 'create', '--trigger-http', '--runtime', 'nodejs16', '--allow-unauthenticated']
   dir: './'
 options:
-  logging: NONE
+  logging: CLOUD_LOGGING_ONLY 
