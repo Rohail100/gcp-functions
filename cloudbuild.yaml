@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['install']
+  dir: 'index.js'
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['functions', 'deploy', 'create', '--trigger-http', '--runtime', 'nodejs16', '--allow-unauthenticated']
+  dir: 'index.js'
