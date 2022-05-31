@@ -3,5 +3,5 @@ steps:
   args: ['install']
   dir: './'
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['functions', 'deploy', 'create', '--trigger-http', '--runtime', 'nodejs16', '--allow-unauthenticated']
+  args: ['functions', 'deploy', 'create', '--trigger-http', '--runtime', 'nodejs16']
   dir: './'
